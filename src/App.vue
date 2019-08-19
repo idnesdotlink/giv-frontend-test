@@ -23,6 +23,15 @@
           >
             Preview
           </b-navbar-item>
+          <a
+            class="navbar-item"
+            href="https://github.com/idnesdotlink/giv-frontend-test"
+          >
+            <b-icon
+              pack="fab"
+              icon="github"
+            ></b-icon>
+          </a>
         </template>
       </b-navbar>
     </div>
