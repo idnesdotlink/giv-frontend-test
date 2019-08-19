@@ -1,0 +1,8 @@
+{
+  "username": "test",
+  "password": "pass",
+  "email": "test@tst.com",
+  "gender": "male",
+  "dob": "04/30/2019",
+  "status": 1
+}
