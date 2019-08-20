@@ -23,6 +23,12 @@
           >
             Preview
           </b-navbar-item>
+          <b-navbar-item
+            tag="router-link"
+            to="/todo"
+          >
+            To Do
+          </b-navbar-item>
           <a
             class="navbar-item"
             href="https://github.com/idnesdotlink/giv-frontend-test"

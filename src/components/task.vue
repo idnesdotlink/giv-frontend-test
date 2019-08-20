@@ -1,9 +1,8 @@
 <template>
   <div class="task">
     <vue-markdown
-      ref="wow"
-      :source="md"
-      lang-prefix="language-"
+      ref="vuemarkdown"
+      :source="markdown"
     ></vue-markdown>
   </div>
 </template>
@@ -20,40 +19,43 @@ import Vue from 'vue'
 export default {
   name: 'task',
   components: {
-    'vue-markdown': VueMarkdown
+    VueMarkdown
   },
   mounted () {
-    const md = async function () {
-      let md = (await import('@/assets/task.md')).default
-      let schemajson = (await import('@/assets/schema.example.json')).default
-      let outputjson = (await import('@/assets/output.example.json')).default
-      let img = (await import('@/assets/form.png')).default
-      console.log(img)
-      md = md
-        .replace('{{ schemajson }}', JSON.stringify(schemajson, null, 2))
-        .replace('{{ outputjson }}', JSON.stringify(outputjson, null, 2))
-        .replace('{{ formpng }}', img)
-      let prettyMD = prettier.format(md, {
-        parser: 'markdown',
-        plugins: [parserMarkdown]
+    this.loadMD()
+  },
+  methods: {
+    loadMD () {
+      const md = async function () {
+        let md = (await import('@/assets/task.md')).default
+        let schemajson = (await import('@/assets/schema.example.json')).default
+        let outputjson = (await import('@/assets/output.example.json')).default
+        let img = (await import('@/assets/form.png')).default
+        md = md
+          .replace('{{ schemajson }}', JSON.stringify(schemajson, null, 2))
+          .replace('{{ outputjson }}', JSON.stringify(outputjson, null, 2))
+          .replace('{{ formpng }}', img)
+        let prettyMD = prettier.format(md, {
+          parser: 'markdown',
+          plugins: [parserMarkdown]
+        })
+        return prettyMD
+      }
+      md().then(prettyMD => {
+        this.markdown = prettyMD
+        Vue.nextTick(() => {
+          const code = this.$refs.vuemarkdown.$el.querySelectorAll('code')
+          let i
+          for (i = 0; i < code.length; ++i) {
+            Prism.highlightElement(code[i])
+          }
+        })
       })
-      return prettyMD
     }
-    md().then(pmd => {
-      this.md = pmd
-      Vue.nextTick(() => {
-        const code = this.$refs.wow.$el.querySelectorAll('code')
-        let i
-        for (i = 0; i < code.length; ++i) {
-          console.log(code[i])
-          Prism.highlightElement(code[i])
-        }
-      })
-    })
   },
   data () {
     return {
-      md: ''
+      markdown: ''
     }
   }
 }
@@ -61,7 +63,6 @@ export default {
 
 <style lang="scss">
 .task {
-  // color: blue;
   h1 {
     font-weight: bold;
     text-align: center;

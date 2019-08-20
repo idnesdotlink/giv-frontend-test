@@ -16,6 +16,12 @@ export default new Router({
       name: 'preview',
       component: () =>
         import(/* webpackChunkName: "preview" */ './views/Preview.vue')
+    },
+    {
+      path: '/todo',
+      name: 'todo',
+      component: () =>
+        import(/* webpackChunkName: "todo" */ './views/Todo.vue')
     }
   ]
 })
