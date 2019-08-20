@@ -39,3 +39,28 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.todo-viewer {
+  h1 {
+    font-weight: bold;
+    text-align: center;
+  }
+  padding: 10px;
+  pre {
+    background-color: #282c34;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+  }
+  ul {
+    list-style-type: disc;
+    margin: 10px;
+    padding: 10px;
+  }
+  ol {
+    margin: 10px;
+    padding: 10px;
+  }
+}
+</style>

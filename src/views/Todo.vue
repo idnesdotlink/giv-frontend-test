@@ -3,11 +3,10 @@
 </template>
 
 <script>
-import todoViewer from '../components/todo-viewer'
 export default {
   name: 'todo',
   components: {
-    todoViewer
+    todoViewer: () => import(/* webpackChunkName: "todo-viewer" */ '../components/todo-viewer')
   }
 }
 </script>
