@@ -3,6 +3,7 @@
     <div class="field">
       <label class="label">{{ attributes.label }}</label>
       <select2
+        @input="onChange()"
         :options="inputOptions"
         v-model="selected"
       >
@@ -39,6 +40,11 @@ export default {
   mounted () {},
   components: {
     select2
+  },
+  methods: {
+    onChange () {
+      this.$emit('psg', this.selected)
+    }
   },
   data () {
     return {

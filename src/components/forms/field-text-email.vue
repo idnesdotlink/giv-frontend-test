@@ -2,6 +2,7 @@
   <section>
     <b-field :label="attributes.label">
       <b-input
+        @input="onInput()"
         v-model="inputValue"
         placeholder="your_email@your_domain"
         :type="attributes.subtype"
@@ -34,6 +35,11 @@ export default {
   },
   mounted () {
     console.log(this.attributes)
+  },
+  methods: {
+    onInput () {
+      this.$emit('psg', this.inputValue)
+    }
   },
   data () {
     return {

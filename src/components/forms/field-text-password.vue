@@ -2,6 +2,7 @@
   <section>
     <b-field :label="attributes.label">
       <b-input
+        @input="onInput()"
         placeholder="Your password"
         password-reveal
         required
@@ -35,6 +36,11 @@ export default {
   },
   mounted () {
     console.log(this.attributes)
+  },
+  methods: {
+    onInput () {
+      this.$emit('psg', this.inputValue)
+    }
   },
   data () {
     return {

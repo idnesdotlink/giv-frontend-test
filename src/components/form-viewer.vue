@@ -23,26 +23,19 @@ export default {
     }
   },
   components: {
-    'field-text-text': () => import(/* webpackChunkName: "field-text-text" */ '@/components/forms/field-text-text.vue'),
-    'field-text-email': () => import(/* webpackChunkName: "field-text-email" */ '@/components/forms/field-text-email.vue'),
-    'field-text-password': () => import(/* webpackChunkName: "field-text-password" */ '@/components/forms/field-text-password.vue'),
-    'field-date': () => import(/* webpackChunkName: "field-date" */ '@/components/forms/field-date.vue'),
-    'field-button-submit': () => import(/* webpackChunkName: "field-button-submit" */ '@/components/forms/field-button-submit.vue'),
-    'field-radio-group': () => import(/* webpackChunkName: "field-radio-group" */ '@/components/forms/field-radio-group.vue'),
-    'field-select': () => import(/* webpackChunkName: "field-select" */ '@/components/forms/field-select.vue')
+    'field-text-text': () => import(/* webpackChunkName: "form-field" */ '@/components/forms/field-text-text.vue'),
+    'field-text-email': () => import(/* webpackChunkName: "form-field" */ '@/components/forms/field-text-email.vue'),
+    'field-text-password': () => import(/* webpackChunkName: "form-field" */ '@/components/forms/field-text-password.vue'),
+    'field-date': () => import(/* webpackChunkName: "form-field" */ '@/components/forms/field-date.vue'),
+    'field-button-submit': () => import(/* webpackChunkName: "form-field" */ '@/components/forms/field-button-submit.vue'),
+    'field-radio-group': () => import(/* webpackChunkName: "form-field" */ '@/components/forms/field-radio-group.vue'),
+    'field-select': () => import(/* webpackChunkName: "form-field" */ '@/components/forms/field-select.vue')
   },
-  mounted () {
-    console.log(this.formSchema)
-    // console.log(this.formSchema)
-    // this.forms = this.formSchema
-    // Vue.nextTick(() => {
-    //   this.forms = this.formSchema
-    // })
-  },
+  mounted () {},
   methods: {
     onpsg (v, n) {
       this.w[n] = v
-      console.log(this.w)
+      console.log({ output: this.w })
     },
     fieldToIs (field) {
       const type = field.type
