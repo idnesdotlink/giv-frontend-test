@@ -34,7 +34,6 @@ export default {
   },
   mounted () {
     this.items = this.values.values
-    console.log(this.items)
   },
   data () {
     return {

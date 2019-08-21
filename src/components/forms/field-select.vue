@@ -37,20 +37,35 @@ export default {
       default: null
     }
   },
-  mounted () {},
+  beforeMount () {
+    this.loadValues()
+  },
+  mounted () {
+
+  },
   components: {
     select2
   },
   methods: {
     onChange () {
       this.$emit('psg', this.selected)
+    },
+    loadValues () {
+      console.log(this.attributes.values)
+      for (let v = 0; v < this.attributes.values.length; v++) {
+        const val = this.attributes.values[v]
+        this.inputOptions.push({
+          id: v + 1,
+          text: val.label
+        })
+      }
     }
   },
   data () {
     return {
       value: 5,
       selected: 2,
-      inputOptions: [{ id: 1, text: 'Male' }, { id: 2, text: 'Female' }]
+      inputOptions: []
     }
   }
 }
