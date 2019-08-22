@@ -9,7 +9,7 @@
         {{ item.task }} <span
           style="color: green;"
           v-if="item.done"
-        >{{ item.done ? '&#10004;' : '' }}</span>
+        >&#10004;</span>
       </li>
     </ol>
   </div>
