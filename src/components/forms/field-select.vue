@@ -3,9 +3,9 @@
     <div class="field">
       <label class="label">{{ attributes.label }}</label>
       <select2
-        @input="onChange()"
+        @input="onFormChange()"
         :options="inputOptions"
-        v-model="selected"
+        v-model="formValue"
       >
         <option
           disabled
@@ -18,8 +18,12 @@
 
 <script>
 import select2 from '@/components/select2.vue'
+import fieldMixins from './field.mixins'
 export default {
   name: 'field-select',
+  mixins: [
+    fieldMixins
+  ],
   props: {
     options: {
       type: Array,

@@ -1,49 +1,20 @@
-<template>
-  <section>
-    <b-field :label="attributes.label">
-      <b-input
-        @input="onInput()"
-        placeholder="Your password"
-        password-reveal
-        required
-        v-model="inputValue"
-        type="password"
-      ></b-input>
-    </b-field>
-  </section>
-</template>
-
 <script>
+import fieldText from './field-text'
 export default {
   name: 'field-text-password',
+  extends: fieldText,
   props: {
     label: {
-      type: String,
-      default: ''
+      default: 'Password'
+    },
+    placeholder: {
+      default: 'password'
+    },
+    passwordReveal: {
+      default: true
     },
     type: {
-      type: String,
-      default: null
-    },
-    value: {
-      type: String,
-      default: null
-    },
-    attributes: {
-      type: Object,
-      default: null
-    }
-  },
-  mounted () {
-  },
-  methods: {
-    onInput () {
-      this.$emit('psg', this.inputValue)
-    }
-  },
-  data () {
-    return {
-      inputValue: ''
+      default: 'password'
     }
   }
 }

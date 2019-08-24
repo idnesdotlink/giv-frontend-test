@@ -1,11 +1,14 @@
 <template>
   <section>
-    <div class="field">
-      <label class="label">{{ attributes.label }}</label>
+    <label class="label">{{ attributes.label }}</label>
+    <div
+      class="field"
+      v-for="item in items"
+      :key="item.label"
+    >
       <b-radio
-        v-for="item in items"
-        :key="item.label"
-        v-model="radio"
+        @input="onFormChange()"
+        v-model="formValue"
         :name="item.label"
         :native-value="item.label"
       >
@@ -16,8 +19,12 @@
 </template>
 
 <script>
+import fieldMixins from './field.mixins'
 export default {
   name: 'field-radio-group',
+  mixins: [
+    fieldMixins
+  ],
   props: {
     attributes: {
       type: Object,

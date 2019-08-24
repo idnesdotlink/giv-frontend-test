@@ -3,6 +3,7 @@
     <component
       v-for="field in schema"
       @psg="onpsg($event, field.name)"
+      @formchange="onFormChange($event, field.name)"
       :key="fieldToKey(field)"
       :is="fieldToIs(field)"
       :class="fieldToClass(field)"
@@ -36,6 +37,9 @@ export default {
     onpsg (v, n) {
       this.w[n] = v
       console.log({ output: this.w })
+    },
+    onFormChange (v) {
+      console.log(v)
     },
     fieldToIs (field) {
       const type = field.type
