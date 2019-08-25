@@ -3,7 +3,9 @@
     <b-button
       type="is-primary"
       @click="clickMe"
-    >{{ attributes.label }}</b-button>
+    >
+      {{ attributes.label }}
+    </b-button>
   </section>
 </template>
 

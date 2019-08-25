@@ -4,7 +4,7 @@ export default {
   name: 'field-text-text',
   extends: fieldText,
   props: {
-    label:  {
+    label: {
       default: 'Name'
     }
   }
