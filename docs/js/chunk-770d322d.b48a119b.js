@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-770d322d"],{c5f6e:function(e){e.exports=[{task:"Use vue js to render it as html, Must be in Vue component based, ",done:!0},{task:"Put all value of fields in one json object",done:!1},{task:"Using dynamic Component",done:!0},{task:"Using Slot",done:!1},{task:"Using Ref",done:!1},{task:"Using Props",done:!0},{task:"Combining it Select2",done:!0},{task:"Combining it Datepicker",done:!0},{task:"Beautify the UI",done:!0},{task:"Add extra field",done:!1}]}}]);
-//# sourceMappingURL=chunk-770d322d.b48a119b.js.map

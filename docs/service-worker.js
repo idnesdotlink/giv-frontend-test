@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "https://idnesdotlink.github.io/giv-frontend-test/precache-manifest.734b520e8412daaa54768525e31078db.js"
+  "https://idnesdotlink.github.io/giv-frontend-test/precache-manifest.3e6e5f7557e15ee89c348f37fb178eef.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "giv-frontend-test"});

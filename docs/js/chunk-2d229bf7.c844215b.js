@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d229bf7"],{df87:function(s){s.exports=JSON.parse('{"username":"test","password":"pass","email":"test@tst.com","gender":"male","dob":"04/30/2019","status":1}')}}]);
+//# sourceMappingURL=chunk-2d229bf7.c844215b.js.map
