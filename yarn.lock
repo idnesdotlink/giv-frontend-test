@@ -809,10 +809,10 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@mdi/font@4.2.95":
-  version "4.2.95"
-  resolved "https://registry.yarnpkg.com/@mdi/font/-/font-4.2.95.tgz#7fd524746979a37dc7c3fd7a9f9cea1bf58205ba"
-  integrity sha512-pCJ9hR8yQH1tMk6KTZYfJsZkI/XQ1rR9Fe/q50ATDDVUoDk7Wl7n9WqT6dYWn0mnCLgrTQl/WNjyrnTo5rKu+A==
+"@mdi/font@4.4.95":
+  version "4.4.95"
+  resolved "https://registry.yarnpkg.com/@mdi/font/-/font-4.4.95.tgz#4a00f46a500120714ded1524f376f7882346d3fd"
+  integrity sha512-9BSvtpDF83dQ06VmwCeXTebzZZisIf4u6d62uC53oD6bzBUEMqiQrbW+oxyFrBYn3VxttRt/MKuL/wKUV9HWmA==
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
@@ -2365,10 +2365,10 @@ bser@^2.0.0:
   dependencies:
     node-int64 "^0.4.0"
 
-buefy@^0.8.2:
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/buefy/-/buefy-0.8.2.tgz#26bfc931c8c7fbe5a90d4b814a8205501eee816a"
-  integrity sha512-fS4sXYE0ge7fN5tP9k67j1fSCS/yxbTrnEhJ5MBt89gcbmVe5x8/SAXdADjx5W4SdERtjKjE9mzoIoRb+ZC29Q==
+buefy@0.8.3:
+  version "0.8.3"
+  resolved "https://registry.yarnpkg.com/buefy/-/buefy-0.8.3.tgz#d8eefe6c3368dde5bc80abfa33cb42736de92604"
+  integrity sha512-01aHoCy4LAD08MmUahXC8mVqtGK/kzJ45ysXskwLWILAhyLMqkZ5fvdMKD9Ky6iDsMttPHdwUe2csmdnIx9caw==
   dependencies:
     bulma "0.7.5"
 
@@ -3966,12 +3966,12 @@ enhanced-resolve@^4.1.0:
     memory-fs "^0.4.0"
     tapable "^1.0.0"
 
-entities@^1.1.1, entities@~1.1.1:
+entities@^1.1.1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/entities/-/entities-1.1.2.tgz#bdfa735299664dfafd34529ed4f8522a275fea56"
   integrity sha512-f2LZMYl1Fzu7YSBKg+RoROelpOaNrcGmE9AZubeDfrCEia483oW4MI4VyFd5VNHIgQ/7qm1I0wUHK1eJnn2y2w==
 
-entities@^2.0.0:
+entities@^2.0.0, entities@~2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/entities/-/entities-2.0.0.tgz#68d6084cab1b079767540d80e56a39b423e4abf4"
   integrity sha512-D9f7V0JSRwIxlRI2mjMqufDrRDnx8p+eEOz7aUM9SuvF8gsBzra0/6tbjl1m8eQHrZlYj6PxqE00hZ1SAIKPLw==
@@ -7193,7 +7193,7 @@ loader-utils@^0.2.16:
     json5 "^0.5.0"
     object-assign "^4.0.1"
 
-loader-utils@^1.0.1, loader-utils@^1.0.2, loader-utils@^1.1.0, loader-utils@^1.2.3:
+loader-utils@^1.0.2, loader-utils@^1.1.0, loader-utils@^1.2.3:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-1.2.3.tgz#1ff5dc6911c9f0a062531a4c04b609406108c2c7"
   integrity sha512-fkpz8ejdnEMG3s37wGL07iSBDg99O9D5yflE9RGNH3hRdx9SOwYfnGYdZOUIZitN8E+E2vkq3MUMYMvPYl5ZZA==
@@ -7447,10 +7447,10 @@ markdown-it-icons@^0.4.1:
     font-awesome-icon-chars "^1.3.0"
     markdown-it-regex "^0.1.4"
 
-markdown-it-ins@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/markdown-it-ins/-/markdown-it-ins-2.0.0.tgz#a5aa6a30f1e2f71e9497567cfdff40f1fde67483"
-  integrity sha1-papqMPHi9x6Ul1Z8/f9A8f3mdIM=
+markdown-it-ins@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-ins/-/markdown-it-ins-3.0.0.tgz#b1b56824c78dc66e52b0fc97531b317cd78d79d2"
+  integrity sha512-+vyAdBuMGwmT2yMlAFJSx2VR/0QZ1onQ/Mkkmr4l9tDFOh5sVoAgRbkgbuSsk+sxJ9vaMH/IQ323ydfvQrPO/Q==
 
 markdown-it-katex@^2.0.3:
   version "2.0.3"
@@ -7459,10 +7459,10 @@ markdown-it-katex@^2.0.3:
   dependencies:
     katex "^0.6.0"
 
-markdown-it-mark@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/markdown-it-mark/-/markdown-it-mark-2.0.0.tgz#46a1aa947105aed8188978e0a016179e404f42c7"
-  integrity sha1-RqGqlHEFrtgYiXjgoBYXnkBPQsc=
+markdown-it-mark@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-mark/-/markdown-it-mark-3.0.0.tgz#27c3e39ef3cc310b2dde5375082c9fa912983cda"
+  integrity sha512-HqMWeKfMMOu4zBO0emmxsoMWmbf2cPKZY1wP6FsTbKmicFfp5y4L3KXAsNeO1rM6NTJVOrNlLKMPjWzriBGspw==
 
 markdown-it-regex@^0.1.4:
   version "0.1.4"
@@ -7497,13 +7497,13 @@ markdown-it-toc-and-anchor@^4.2.0:
     clone "^2.1.0"
     uslug "^1.0.4"
 
-markdown-it@^9.1.0:
-  version "9.1.0"
-  resolved "https://registry.yarnpkg.com/markdown-it/-/markdown-it-9.1.0.tgz#df9601c168568704d554b1fff9af0c5b561168d9"
-  integrity sha512-xHKG4C8iPriyfu/jc2hsCC045fKrMQ0VexX2F1FGYiRxDxqMB2aAhF8WauJ3fltn2kb90moGBkiiEdooGIg55w==
+markdown-it@10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/markdown-it/-/markdown-it-10.0.0.tgz#abfc64f141b1722d663402044e43927f1f50a8dc"
+  integrity sha512-YWOP1j7UbDNz+TumYP1kpwnP0aEa711cJjrAQrzd0UXlbJfc5aAq0F/PZHjiioqDC1NKgvIMX+o+9Bk7yuM2dg==
   dependencies:
     argparse "^1.0.7"
-    entities "~1.1.1"
+    entities "~2.0.0"
     linkify-it "^2.0.0"
     mdurl "^1.0.1"
     uc.micro "^1.0.5"
@@ -10062,15 +10062,15 @@ sane@^4.0.3:
     minimist "^1.1.1"
     walker "~1.0.5"
 
-sass-loader@7.3.1:
-  version "7.3.1"
-  resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-7.3.1.tgz#a5bf68a04bcea1c13ff842d747150f7ab7d0d23f"
-  integrity sha512-tuU7+zm0pTCynKYHpdqaPpe+MMTQ76I9TPZ7i4/5dZsigE350shQWe5EZNl5dBidM49TPET75tNqRbcsUZWeNA==
+sass-loader@8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-8.0.0.tgz#e7b07a3e357f965e6b03dd45b016b0a9746af797"
+  integrity sha512-+qeMu563PN7rPdit2+n5uuYVR0SSVwm0JsOUsaJXzgYcClWSlmX0iHDnmeOobPkf5kUglVot3QS6SyLyaQoJ4w==
   dependencies:
     clone-deep "^4.0.1"
-    loader-utils "^1.0.1"
-    neo-async "^2.5.0"
-    pify "^4.0.1"
+    loader-utils "^1.2.3"
+    neo-async "^2.6.1"
+    schema-utils "^2.1.0"
     semver "^6.3.0"
 
 sass@1.22.10:
@@ -10101,6 +10101,14 @@ schema-utils@^2.0.0, schema-utils@^2.0.1:
   dependencies:
     ajv "^6.1.0"
     ajv-keywords "^3.1.0"
+
+schema-utils@^2.1.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-2.2.0.tgz#48a065ce219e0cacf4631473159037b2c1ae82da"
+  integrity sha512-5EwsCNhfFTZvUreQhx/4vVQpJ/lnCAkgoIHLhSpp4ZirE+4hzFvdJi0FMub6hxbFVBJYSpeVVmon+2e7uEGRrA==
+  dependencies:
+    ajv "^6.10.2"
+    ajv-keywords "^3.4.1"
 
 select-hose@^2.0.0:
   version "2.0.0"
@@ -11385,10 +11393,10 @@ vary@~1.1.2:
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
 
-vee-validate@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/vee-validate/-/vee-validate-3.0.3.tgz#3426dbd35e4d3e46b4b4d64f7b74734346d63019"
-  integrity sha512-DsM1h1KDrUNzyL90JTfZkz6wmcGC033g2PjWhW40uU4rySueBg0tq+bb5zois/1vRAfNCXL5JVwVWeDQec4wuw==
+vee-validate@3.0.5:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/vee-validate/-/vee-validate-3.0.5.tgz#0555a329f90c32cacd37b8318b4d08e6526e1856"
+  integrity sha512-VmRscZiCMrL6t6WdR5yke1RzYAMnEB7wTA2FKnS1eGIRY2l71Z6FuUqgcm9rHtE3GXmi5NiF0RoiD0ivNC5crA==
 
 vendors@^1.0.0:
   version "1.0.3"
